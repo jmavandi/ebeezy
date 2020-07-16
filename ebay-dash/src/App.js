@@ -19,6 +19,9 @@ function App() {
           <Link to='/inventory'> <Button >  <Image src={inventoryPic} /> </Button> </Link>
           </Menu.Item>
           <Menu.Item>
+            <Link to='/cardslist'> <Button >  <Image src={inventoryPic} /> </Button> </Link>
+          </Menu.Item>
+          <Menu.Item>
             <Button>Log-in</Button>
           </Menu.Item>
         </Menu>
