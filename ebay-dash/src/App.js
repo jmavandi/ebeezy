@@ -30,6 +30,9 @@ function App() {
           <Route path="/inventory">
             <Inventory/>
           </Route>
+          <Route path="/pricecheck" >
+            
+          </Route>
         </Switch>
       </div>
     </Router>
