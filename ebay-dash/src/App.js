@@ -5,7 +5,9 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link, } from "react-router-dom";
 import { Image, Menu, Button } from 'semantic-ui-react';
 
-import Inventory from './components/inventory.js';
+import Inventory from './components/Inventory.js';
+import CardsList from './components/CardsList.js';
+import PriceCheck from './components/PriceCheck.js';
 
 function App() {
   return (
@@ -16,10 +18,13 @@ function App() {
         </header>
         <Menu>
           <Menu.Item>
-          <Link to='/inventory'> <Button >  <Image src={inventoryPic} /> </Button> </Link>
+            <Link to='/inventory'> <Button >  <Image src={inventoryPic} /> </Button> </Link>
           </Menu.Item>
           <Menu.Item>
             <Link to='/cardslist'> <Button >  <Image src={inventoryPic} /> </Button> </Link>
+          </Menu.Item>
+          <Menu.Item>
+            <Link to='/pricecheck'> <Button >  <Image src={inventoryPic} /> </Button> </Link>
           </Menu.Item>
           <Menu.Item>
             <Button>Log-in</Button>
@@ -30,8 +35,11 @@ function App() {
           <Route path="/inventory">
             <Inventory/>
           </Route>
+          <Route path="/cardslist" >
+            <CardsList/>
+          </Route>
           <Route path="/pricecheck" >
-            
+            <PriceCheck/>
           </Route>
         </Switch>
       </div>
